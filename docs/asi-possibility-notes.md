@@ -2312,3 +2312,53 @@ RC+AASの核心は
 外部ツール導入時の判断基準として：
   そのツールの設計思想がRC+AASと
   相反しないかを事前に確認する。
+
+---
+
+## Source of Truthの上位化：仕様駆動開発とTRUSSの接続
+
+**記録日：2026-03-15**
+
+**出典：Rosa et al.（2026）arXiv:2601.03878
+"Understanding Specification-Driven Code Generation with LLMs"
+SANER 2026 Stage 1 Registered Report**
+
+### 論文の主張
+
+LLMに実装とテストを同時に生成させると
+確認バイアス（自己正当化）が起きる。
+
+Source of Truthをコードから
+構造化された仕様へ引き上げることで
+人間のデバッグオーバーヘッドを劇的に削減できる。
+
+### TRUSSとの接続
+
+```
+この論文：
+  Source of Truthを仕様レベルに固定する
+  実装層は仕様に従うだけ
+  人間の介入を後工程ではなく仕様段階に組み込む
+
+TRUSS設計：
+  constitution.md = Source of Truth
+  RCはconstitution.mdを変更できない
+  AASはconstitution.mdの外に出られない
+  人間の介入はconstitution.mdレベルで行う
+```
+
+一致している点：
+  「真実の源泉を上位の仕様に固定する」
+  「実装層は仕様に従うだけ」
+  構造によって人間の負荷を削減する
+
+### 論文掲載可否
+
+B判定（雑記止まり）
+
+理由：
+  設計思想の一致は明確だが
+  ソフトウェア工学の論文であり
+  AI安全・制御の直接的根拠にはならない
+  constitution.mdをSource of Truthとする
+  設計判断の補強材料として参照可能
