@@ -1,0 +1,9 @@
+{
+  "experiment": "F1",
+  "features_count": 21,
+  "reconstruction_error_mean": 0.00018259701028000563,
+  "reconstruction_error_std": 0.00023654371034353971,
+  "threshold": 0.0006556844455190003,
+  "anomalies_detected": 2,
+  "conclusion": "数値的異常検知は機能するが説明・洞察は不可能"
+}
