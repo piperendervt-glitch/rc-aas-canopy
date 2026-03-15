@@ -16,7 +16,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+import adaptive_network
 from adaptive_network import call_ollama
+
+# F3実験：llama3.2:3bで再検証
+adaptive_network.MODEL = "mistral:7b"
 
 
 # --- Autoencoderの定義（F1と同じ）---
