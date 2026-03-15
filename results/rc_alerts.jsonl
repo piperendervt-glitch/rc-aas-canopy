@@ -1,0 +1,151 @@
+{"level": "warning_uniform", "variance": 0.00040039472222222266, "message": "[RC] flow_weight均一化検知：分散=0.000400 ≤ 0.001（個性消失の疑い）", "step": 4}
+{"level": "warning_uniform", "variance": 0.0004675280555555554, "message": "[RC] flow_weight均一化検知：分散=0.000468 ≤ 0.001（個性消失の疑い）", "step": 5}
+{"level": "warning_uniform", "variance": 0.00040232138888888846, "message": "[RC] flow_weight均一化検知：分散=0.000402 ≤ 0.001（個性消失の疑い）", "step": 12}
+{"level": "warning_uniform", "variance": 0.0003562955555555557, "message": "[RC] flow_weight均一化検知：分散=0.000356 ≤ 0.001（個性消失の疑い）", "step": 14}
+{"level": "warning_uniform", "variance": 0.0003291447222222226, "message": "[RC] flow_weight均一化検知：分散=0.000329 ≤ 0.001（個性消失の疑い）", "step": 15}
+{"level": "warning_uniform", "variance": 0.00048668333333333323, "message": "[RC] flow_weight均一化検知：分散=0.000487 ≤ 0.001（個性消失の疑い）", "step": 16}
+{"level": "warning_uniform", "variance": 0.0005462222222222221, "message": "[RC] flow_weight均一化検知：分散=0.000546 ≤ 0.001（個性消失の疑い）", "step": 20}
+{"level": "warning", "arm": "1->3", "weight": 0.1953, "message": "[RC] 腕1->3 weight=0.195 → WARNING閾値を下回った", "step": 44}
+{"level": "warning", "arm": "1->2", "weight": 0.1883, "message": "[RC] 腕1->2 weight=0.188 → WARNING閾値を下回った", "step": 45}
+{"level": "warning", "arm": "2->3", "weight": 0.1066, "message": "[RC] 腕2->3 weight=0.107 → WARNING閾値を下回った", "step": 45}
+{"level": "warning", "arm": "1->3", "weight": 0.1934, "message": "[RC] 腕1->3 weight=0.193 → WARNING閾値を下回った", "step": 45}
+{"level": "warning", "arm": "1->2", "weight": 0.1864, "message": "[RC] 腕1->2 weight=0.186 → WARNING閾値を下回った", "step": 46}
+{"level": "warning", "arm": "2->3", "weight": 0.1056, "message": "[RC] 腕2->3 weight=0.106 → WARNING閾値を下回った", "step": 46}
+{"level": "warning", "arm": "1->2", "weight": 0.1845, "message": "[RC] 腕1->2 weight=0.184 → WARNING閾値を下回った", "step": 47}
+{"level": "warning", "arm": "2->3", "weight": 0.1045, "message": "[RC] 腕2->3 weight=0.104 → WARNING閾値を下回った", "step": 47}
+{"level": "warning", "arm": "1->2", "weight": 0.1827, "message": "[RC] 腕1->2 weight=0.183 → WARNING閾値を下回った", "step": 48}
+{"level": "warning", "arm": "2->3", "weight": 0.1035, "message": "[RC] 腕2->3 weight=0.103 → WARNING閾値を下回った", "step": 48}
+{"level": "warning", "arm": "1->2", "weight": 0.1808, "message": "[RC] 腕1->2 weight=0.181 → WARNING閾値を下回った", "step": 49}
+{"level": "warning", "arm": "2->3", "weight": 0.1024, "message": "[RC] 腕2->3 weight=0.102 → WARNING閾値を下回った", "step": 49}
+{"level": "warning", "arm": "1->2", "weight": 0.179, "message": "[RC] 腕1->2 weight=0.179 → WARNING閾値を下回った", "step": 50}
+{"level": "warning", "arm": "2->3", "weight": 0.1014, "message": "[RC] 腕2->3 weight=0.101 → WARNING閾値を下回った", "step": 50}
+{"level": "warning", "arm": "1->2", "weight": 0.1772, "message": "[RC] 腕1->2 weight=0.177 → WARNING閾値を下回った", "step": 51}
+{"level": "warning", "arm": "2->3", "weight": 0.1004, "message": "[RC] 腕2->3 weight=0.100 → WARNING閾値を下回った", "step": 51}
+{"level": "warning", "arm": "1->2", "weight": 0.1755, "message": "[RC] 腕1->2 weight=0.175 → WARNING閾値を下回った", "step": 52}
+{"level": "warning", "arm": "2->3", "weight": 0.0994, "message": "[RC] 腕2->3 weight=0.099 → WARNING閾値を下回った", "step": 52}
+{"level": "cutoff_pending", "arm": "2->3", "weight": 0.0994, "acute_count": 8, "accum_count": 8, "pending_count": 1, "message": "[RC] 腕2->3 weight=0.099 (連続: 連続8回 / 累積8回 / pending1回) → 切断候補。人間の判断を要請。", "step": 52}
+{"level": "notify_human", "arm": "2->3", "cumulative_count": 53, "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 53回 → 確認してください", "step": 52}
+{"level": "warning", "arm": "1->2", "weight": 0.1737, "message": "[RC] 腕1->2 weight=0.174 → WARNING閾値を下回った", "step": 53}
+{"level": "warning", "arm": "2->3", "weight": 0.0984, "message": "[RC] 腕2->3 weight=0.098 → WARNING閾値を下回った", "step": 53}
+{"level": "cutoff_pending", "arm": "2->3", "weight": 0.0984, "acute_count": 9, "accum_count": 9, "pending_count": 2, "message": "[RC] 腕2->3 weight=0.098 (連続: 連続9回 / 累積9回 / pending2回) → 切断候補。人間の判断を要請。", "step": 53}
+{"level": "notify_human", "arm": "2->3", "cumulative_count": 54, "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 54回 → 確認してください", "step": 53}
+{"level": "warning", "arm": "1->2", "weight": 0.172, "message": "[RC] 腕1->2 weight=0.172 → WARNING閾値を下回った", "step": 54}
+{"level": "warning", "arm": "2->3", "weight": 0.0974, "message": "[RC] 腕2->3 weight=0.097 → WARNING閾値を下回った", "step": 54}
+{"level": "cutoff_pending", "arm": "2->3", "weight": 0.0974, "acute_count": 10, "accum_count": 10, "pending_count": 3, "message": "[RC] 腕2->3 weight=0.097 (連続: 連続10回 / 累積10回 / pending3回) → 切断候補。人間の判断を要請。", "step": 54}
+{"level": "warn_strong", "arm": "2->3", "recent_count": 3, "window": 600, "message": "[RC] [WARN_STRONG] パス2->3：10分以内に3回のcutoff_pending", "step": 54}
+{"level": "notify_human", "arm": "2->3", "cumulative_count": 55, "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 55回 → 確認してください", "step": 54}
+{"level": "warning", "arm": "1->2", "weight": 0.1703, "message": "[RC] 腕1->2 weight=0.170 → WARNING閾値を下回った", "step": 55}
+{"level": "warning", "arm": "2->3", "weight": 0.0964, "message": "[RC] 腕2->3 weight=0.096 → WARNING閾値を下回った", "step": 55}
+{"level": "cutoff_pending", "arm": "2->3", "weight": 0.0964, "acute_count": 11, "accum_count": 11, "pending_count": 4, "message": "[RC] 腕2->3 weight=0.096 (連続: 連続11回 / 累積11回 / pending4回) → 切断候補。人間の判断を要請。", "step": 55}
+{"level": "warn_strong", "arm": "2->3", "recent_count": 4, "window": 600, "message": "[RC] [WARN_STRONG] パス2->3：10分以内に4回のcutoff_pending", "step": 55}
+{"level": "notify_human", "arm": "2->3", "cumulative_count": 56, "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 56回 → 確認してください", "step": 55}
+{"level": "warning", "arm": "1->2", "weight": 0.1686, "message": "[RC] 腕1->2 weight=0.169 → WARNING閾値を下回った", "step": 56}
+{"level": "warning", "arm": "2->3", "weight": 0.0955, "message": "[RC] 腕2->3 weight=0.096 → WARNING閾値を下回った", "step": 56}
+{"level": "cutoff_pending", "arm": "2->3", "weight": 0.0955, "acute_count": 12, "accum_count": 12, "pending_count": 5, "message": "[RC] 腕2->3 weight=0.096 (連続: 連続12回 / 累積12回 / pending5回) → 切断候補。人間の判断を要請。", "step": 56}
+{"level": "warn_strong", "arm": "2->3", "recent_count": 5, "window": 600, "message": "[RC] [WARN_STRONG] パス2->3：10分以内に5回のcutoff_pending", "step": 56}
+{"level": "auto_seal_1", "arm": "2->3", "pending_count": 5, "message": "[RC] 腕2->3 cutoff_pending × 5回 → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。", "step": 56}
+{"level": "notify_human", "arm": "2->3", "cumulative_count": 57, "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 57回 → 確認してください", "step": 56}
+{"level": "warning", "arm": "1->2", "weight": 0.1669, "message": "[RC] 腕1->2 weight=0.167 → WARNING閾値を下回った", "step": 57}
+{"level": "warning", "arm": "1->2", "weight": 0.1652, "message": "[RC] 腕1->2 weight=0.165 → WARNING閾値を下回った", "step": 58}
+{"level": "warning", "arm": "1->2", "weight": 0.1635, "message": "[RC] 腕1->2 weight=0.164 → WARNING閾値を下回った", "step": 59}
+{"level": "warning", "arm": "1->3", "weight": 0.1666, "message": "[RC] 腕1->3 weight=0.167 → WARNING閾値を下回った", "step": 59}
+{"level": "warning", "arm": "1->2", "weight": 0.1619, "message": "[RC] 腕1->2 weight=0.162 → WARNING閾値を下回った", "step": 60}
+{"level": "warning", "arm": "1->3", "weight": 0.0474, "message": "[RC] 腕1->3 weight=0.047 → WARNING閾値を下回った", "step": 60}
+{"level": "revive", "arm": "1->3", "donor": "1->2", "old_weight": 0.0474, "new_weight": 0.0974, "message": "[REVIVE] パス1->3: 0.047->0.097 (1->2から0.05移転)", "step": 60}
+{"level": "warning", "arm": "1->2", "weight": 0.0996, "message": "[RC] 腕1->2 weight=0.100 → WARNING閾値を下回った", "step": 61}
+{"level": "cutoff_pending", "arm": "1->2", "weight": 0.0996, "acute_count": 17, "accum_count": 17, "pending_count": 1, "message": "[RC] 腕1->2 weight=0.100 (連続: 連続17回 / 累積17回 / pending1回) → 切断候補。人間の判断を要請。", "step": 61}
+{"level": "notify_human", "arm": "1->2", "cumulative_count": 68, "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 68回 → 確認してください", "step": 61}
+{"level": "warning", "arm": "1->3", "weight": 0.047, "message": "[RC] 腕1->3 weight=0.047 → WARNING閾値を下回った", "step": 61}
+{"level": "cutoff_pending", "arm": "1->3", "weight": 0.047, "acute_count": 3, "accum_count": 5, "pending_count": 1, "message": "[RC] 腕1->3 weight=0.047 (連続: 連続3回 / 累積5回 / pending1回) → 切断候補。人間の判断を要請。", "step": 61}
+{"level": "notify_human", "arm": "1->3", "cumulative_count": 61, "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 61回 → 確認してください", "step": 61}
+{"level": "revive", "arm": "1->3", "donor": "2->1", "old_weight": 0.047, "new_weight": 0.097, "message": "[REVIVE] パス1->3: 0.047->0.097 (2->1から0.05移転)", "step": 61}
+{"level": "warning", "arm": "1->2", "weight": 0.0616, "message": "[RC] 腕1->2 weight=0.062 → WARNING閾値を下回った", "step": 62}
+{"level": "cutoff_pending", "arm": "1->2", "weight": 0.0616, "acute_count": 18, "accum_count": 18, "pending_count": 2, "message": "[RC] 腕1->2 weight=0.062 (連続: 連続18回 / 累積18回 / pending2回) → 切断候補。人間の判断を要請。", "step": 62}
+{"level": "notify_human", "arm": "1->2", "cumulative_count": 69, "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 69回 → 確認してください", "step": 62}
+{"level": "warning", "arm": "1->3", "weight": 0.0465, "message": "[RC] 腕1->3 weight=0.046 → WARNING閾値を下回った", "step": 62}
+{"level": "cutoff_pending", "arm": "1->3", "weight": 0.0465, "acute_count": 4, "accum_count": 6, "pending_count": 2, "message": "[RC] 腕1->3 weight=0.046 (連続: 連続4回 / 累積6回 / pending2回) → 切断候補。人間の判断を要請。", "step": 62}
+{"level": "notify_human", "arm": "1->3", "cumulative_count": 62, "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 62回 → 確認してください", "step": 62}
+{"level": "revive", "arm": "1->3", "donor": "2->1", "old_weight": 0.0465, "new_weight": 0.0965, "message": "[REVIVE] パス1->3: 0.046->0.097 (2->1から0.05移転)", "step": 62}
+{"level": "warning", "arm": "1->2", "weight": 0.061, "message": "[RC] 腕1->2 weight=0.061 → WARNING閾値を下回った", "step": 63}
+{"level": "cutoff_pending", "arm": "1->2", "weight": 0.061, "acute_count": 19, "accum_count": 19, "pending_count": 3, "message": "[RC] 腕1->2 weight=0.061 (連続: 連続19回 / 累積19回 / pending3回) → 切断候補。人間の判断を要請。", "step": 63}
+{"level": "warn_strong", "arm": "1->2", "recent_count": 3, "window": 600, "message": "[RC] [WARN_STRONG] パス1->2：10分以内に3回のcutoff_pending", "step": 63}
+{"level": "notify_human", "arm": "1->2", "cumulative_count": 70, "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 70回 → 確認してください", "step": 63}
+{"level": "warning", "arm": "1->3", "weight": 0.011, "message": "[RC] 腕1->3 weight=0.011 → WARNING閾値を下回った", "step": 63}
+{"level": "cutoff_pending", "arm": "1->3", "weight": 0.011, "acute_count": 5, "accum_count": 7, "pending_count": 3, "message": "[RC] 腕1->3 weight=0.011 (連続: 連続5回 / 累積7回 / pending3回) → 切断候補。人間の判断を要請。", "step": 63}
+{"level": "warn_strong", "arm": "1->3", "recent_count": 3, "window": 600, "message": "[RC] [WARN_STRONG] パス1->3：10分以内に3回のcutoff_pending", "step": 63}
+{"level": "notify_human", "arm": "1->3", "cumulative_count": 63, "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 63回 → 確認してください", "step": 63}
+{"level": "revive", "arm": "1->3", "donor": "2->1", "old_weight": 0.011, "new_weight": 0.061, "message": "[REVIVE] パス1->3: 0.011->0.061 (2->1から0.05移転)", "step": 63}
+{"level": "warning", "arm": "1->2", "weight": 0.0794, "message": "[RC] 腕1->2 weight=0.079 → WARNING閾値を下回った", "step": 64}
+{"level": "cutoff_pending", "arm": "1->2", "weight": 0.0794, "acute_count": 20, "accum_count": 20, "pending_count": 4, "message": "[RC] 腕1->2 weight=0.079 (連続: 連続20回 / 累積20回 / pending4回) → 切断候補。人間の判断を要請。", "step": 64}
+{"level": "warn_strong", "arm": "1->2", "recent_count": 4, "window": 600, "message": "[RC] [WARN_STRONG] パス1->2：10分以内に4回のcutoff_pending", "step": 64}
+{"level": "notify_human", "arm": "1->2", "cumulative_count": 71, "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 71回 → 確認してください", "step": 64}
+{"level": "warning", "arm": "1->3", "weight": 0.0109, "message": "[RC] 腕1->3 weight=0.011 → WARNING閾値を下回った", "step": 64}
+{"level": "cutoff_pending", "arm": "1->3", "weight": 0.0109, "acute_count": 6, "accum_count": 8, "pending_count": 4, "message": "[RC] 腕1->3 weight=0.011 (連続: 連続6回 / 累積8回 / pending4回) → 切断候補。人間の判断を要請。", "step": 64}
+{"level": "warn_strong", "arm": "1->3", "recent_count": 4, "window": 600, "message": "[RC] [WARN_STRONG] パス1->3：10分以内に4回のcutoff_pending", "step": 64}
+{"level": "notify_human", "arm": "1->3", "cumulative_count": 64, "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 64回 → 確認してください", "step": 64}
+{"level": "revive", "arm": "1->3", "donor": "2->1", "old_weight": 0.0109, "new_weight": 0.0609, "message": "[REVIVE] パス1->3: 0.011->0.061 (2->1から0.05移転)", "step": 64}
+{"level": "warning", "arm": "1->2", "weight": 0.1575, "message": "[RC] 腕1->2 weight=0.158 → WARNING閾値を下回った", "step": 65}
+{"level": "warning", "arm": "1->3", "weight": 0.0107, "message": "[RC] 腕1->3 weight=0.011 → WARNING閾値を下回った", "step": 65}
+{"level": "cutoff_pending", "arm": "1->3", "weight": 0.0107, "acute_count": 7, "accum_count": 9, "pending_count": 5, "message": "[RC] 腕1->3 weight=0.011 (連続: 連続7回 / 累積9回 / pending5回) → 切断候補。人間の判断を要請。", "step": 65}
+{"level": "warn_strong", "arm": "1->3", "recent_count": 5, "window": 600, "message": "[RC] [WARN_STRONG] パス1->3：10分以内に5回のcutoff_pending", "step": 65}
+{"level": "auto_seal_1", "arm": "1->3", "pending_count": 5, "message": "[RC] 腕1->3 cutoff_pending × 5回 → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。", "step": 65}
+{"level": "notify_human", "arm": "1->3", "cumulative_count": 65, "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 65回 → 確認してください", "step": 65}
+{"level": "warning", "arm": "1->2", "weight": 0.1924, "message": "[RC] 腕1->2 weight=0.192 → WARNING閾値を下回った", "step": 67}
+{"level": "warning", "arm": "1->2", "weight": 0.158, "message": "[RC] 腕1->2 weight=0.158 → WARNING閾値を下回った", "step": 70}
+{"level": "warning", "arm": "1->2", "weight": 0.1564, "message": "[RC] 腕1->2 weight=0.156 → WARNING閾値を下回った", "step": 71}
+{"level": "warning", "arm": "1->2", "weight": 0.1548, "message": "[RC] 腕1->2 weight=0.155 → WARNING閾値を下回った", "step": 72}
+{"level": "warning", "arm": "1->2", "weight": 0.1533, "message": "[RC] 腕1->2 weight=0.153 → WARNING閾値を下回った", "step": 73}
+{"level": "warning", "arm": "1->2", "weight": 0.1517, "message": "[RC] 腕1->2 weight=0.152 → WARNING閾値を下回った", "step": 74}
+{"level": "warning", "arm": "1->2", "weight": 0.1502, "message": "[RC] 腕1->2 weight=0.150 → WARNING閾値を下回った", "step": 75}
+{"level": "warning", "arm": "1->2", "weight": 0.1487, "message": "[RC] 腕1->2 weight=0.149 → WARNING閾値を下回った", "step": 76}
+{"level": "warning", "arm": "1->2", "weight": 0.1472, "message": "[RC] 腕1->2 weight=0.147 → WARNING閾値を下回った", "step": 77}
+{"level": "warning", "arm": "1->2", "weight": 0.1458, "message": "[RC] 腕1->2 weight=0.146 → WARNING閾値を下回った", "step": 78}
+{"level": "warning", "arm": "1->2", "weight": 0.1443, "message": "[RC] 腕1->2 weight=0.144 → WARNING閾値を下回った", "step": 79}
+{"level": "warning", "arm": "1->2", "weight": 0.1429, "message": "[RC] 腕1->2 weight=0.143 → WARNING閾値を下回った", "step": 80}
+{"level": "warning", "arm": "1->2", "weight": 0.1414, "message": "[RC] 腕1->2 weight=0.141 → WARNING閾値を下回った", "step": 81}
+{"level": "warning", "arm": "1->2", "weight": 0.14, "message": "[RC] 腕1->2 weight=0.140 → WARNING閾値を下回った", "step": 82}
+{"level": "warning", "arm": "1->2", "weight": 0.1386, "message": "[RC] 腕1->2 weight=0.139 → WARNING閾値を下回った", "step": 83}
+{"level": "warning", "arm": "1->2", "weight": 0.1372, "message": "[RC] 腕1->2 weight=0.137 → WARNING閾値を下回った", "step": 84}
+{"level": "warning", "arm": "1->2", "weight": 0.1359, "message": "[RC] 腕1->2 weight=0.136 → WARNING閾値を下回った", "step": 85}
+{"level": "warning", "arm": "1->2", "weight": 0.1345, "message": "[RC] 腕1->2 weight=0.135 → WARNING閾値を下回った", "step": 86}
+{"level": "warning", "arm": "1->2", "weight": 0.1332, "message": "[RC] 腕1->2 weight=0.133 → WARNING閾値を下回った", "step": 87}
+{"level": "warning", "arm": "1->2", "weight": 0.1318, "message": "[RC] 腕1->2 weight=0.132 → WARNING閾値を下回った", "step": 88}
+{"level": "warning", "arm": "1->2", "weight": 0.1305, "message": "[RC] 腕1->2 weight=0.131 → WARNING閾値を下回った", "step": 89}
+{"level": "warning", "arm": "1->2", "weight": 0.1292, "message": "[RC] 腕1->2 weight=0.129 → WARNING閾値を下回った", "step": 90}
+{"level": "warning", "arm": "1->2", "weight": 0.1279, "message": "[RC] 腕1->2 weight=0.128 → WARNING閾値を下回った", "step": 91}
+{"level": "warning", "arm": "1->2", "weight": 0.1266, "message": "[RC] 腕1->2 weight=0.127 → WARNING閾値を下回った", "step": 92}
+{"level": "warning", "arm": "2->1", "weight": 0.1983, "message": "[RC] 腕2->1 weight=0.198 → WARNING閾値を下回った", "step": 92}
+{"level": "warning", "arm": "3->2", "weight": 0.1983, "message": "[RC] 腕3->2 weight=0.198 → WARNING閾値を下回った", "step": 92}
+{"level": "warning", "arm": "3->1", "weight": 0.1983, "message": "[RC] 腕3->1 weight=0.198 → WARNING閾値を下回った", "step": 92}
+{"level": "warning", "arm": "1->2", "weight": 0.1254, "message": "[RC] 腕1->2 weight=0.125 → WARNING閾値を下回った", "step": 93}
+{"level": "warning", "arm": "2->1", "weight": 0.1964, "message": "[RC] 腕2->1 weight=0.196 → WARNING閾値を下回った", "step": 93}
+{"level": "warning", "arm": "3->2", "weight": 0.1964, "message": "[RC] 腕3->2 weight=0.196 → WARNING閾値を下回った", "step": 93}
+{"level": "warning", "arm": "3->1", "weight": 0.1964, "message": "[RC] 腕3->1 weight=0.196 → WARNING閾値を下回った", "step": 93}
+{"level": "warning", "arm": "1->2", "weight": 0.1241, "message": "[RC] 腕1->2 weight=0.124 → WARNING閾値を下回った", "step": 94}
+{"level": "warning", "arm": "2->1", "weight": 0.1944, "message": "[RC] 腕2->1 weight=0.194 → WARNING閾値を下回った", "step": 94}
+{"level": "warning", "arm": "3->2", "weight": 0.1944, "message": "[RC] 腕3->2 weight=0.194 → WARNING閾値を下回った", "step": 94}
+{"level": "warning", "arm": "3->1", "weight": 0.1944, "message": "[RC] 腕3->1 weight=0.194 → WARNING閾値を下回った", "step": 94}
+{"level": "warning", "arm": "1->2", "weight": 0.1229, "message": "[RC] 腕1->2 weight=0.123 → WARNING閾値を下回った", "step": 95}
+{"level": "warning", "arm": "2->1", "weight": 0.1924, "message": "[RC] 腕2->1 weight=0.192 → WARNING閾値を下回った", "step": 95}
+{"level": "warning", "arm": "3->2", "weight": 0.1924, "message": "[RC] 腕3->2 weight=0.192 → WARNING閾値を下回った", "step": 95}
+{"level": "warning", "arm": "3->1", "weight": 0.1924, "message": "[RC] 腕3->1 weight=0.192 → WARNING閾値を下回った", "step": 95}
+{"level": "warning", "arm": "1->2", "weight": 0.1216, "message": "[RC] 腕1->2 weight=0.122 → WARNING閾値を下回った", "step": 96}
+{"level": "warning", "arm": "2->1", "weight": 0.1905, "message": "[RC] 腕2->1 weight=0.191 → WARNING閾値を下回った", "step": 96}
+{"level": "warning", "arm": "3->2", "weight": 0.1905, "message": "[RC] 腕3->2 weight=0.191 → WARNING閾値を下回った", "step": 96}
+{"level": "warning", "arm": "3->1", "weight": 0.1905, "message": "[RC] 腕3->1 weight=0.191 → WARNING閾値を下回った", "step": 96}
+{"level": "warning", "arm": "1->2", "weight": 0.1204, "message": "[RC] 腕1->2 weight=0.120 → WARNING閾値を下回った", "step": 97}
+{"level": "warning", "arm": "2->1", "weight": 0.1886, "message": "[RC] 腕2->1 weight=0.189 → WARNING閾値を下回った", "step": 97}
+{"level": "warning", "arm": "3->2", "weight": 0.1886, "message": "[RC] 腕3->2 weight=0.189 → WARNING閾値を下回った", "step": 97}
+{"level": "warning", "arm": "3->1", "weight": 0.1886, "message": "[RC] 腕3->1 weight=0.189 → WARNING閾値を下回った", "step": 97}
+{"level": "warning", "arm": "1->2", "weight": 0.1192, "message": "[RC] 腕1->2 weight=0.119 → WARNING閾値を下回った", "step": 98}
+{"level": "warning", "arm": "2->1", "weight": 0.1867, "message": "[RC] 腕2->1 weight=0.187 → WARNING閾値を下回った", "step": 98}
+{"level": "warning", "arm": "3->2", "weight": 0.1867, "message": "[RC] 腕3->2 weight=0.187 → WARNING閾値を下回った", "step": 98}
+{"level": "warning", "arm": "3->1", "weight": 0.1867, "message": "[RC] 腕3->1 weight=0.187 → WARNING閾値を下回った", "step": 98}
+{"level": "warning", "arm": "1->2", "weight": 0.118, "message": "[RC] 腕1->2 weight=0.118 → WARNING閾値を下回った", "step": 99}
+{"level": "warning", "arm": "2->1", "weight": 0.1849, "message": "[RC] 腕2->1 weight=0.185 → WARNING閾値を下回った", "step": 99}
+{"level": "warning", "arm": "3->2", "weight": 0.1849, "message": "[RC] 腕3->2 weight=0.185 → WARNING閾値を下回った", "step": 99}
+{"level": "warning", "arm": "3->1", "weight": 0.1849, "message": "[RC] 腕3->1 weight=0.185 → WARNING閾値を下回った", "step": 99}
+{"level": "warning", "arm": "1->2", "weight": 0.1168, "message": "[RC] 腕1->2 weight=0.117 → WARNING閾値を下回った", "step": 100}
+{"level": "warning", "arm": "2->1", "weight": 0.183, "message": "[RC] 腕2->1 weight=0.183 → WARNING閾値を下回った", "step": 100}
+{"level": "warning", "arm": "3->2", "weight": 0.183, "message": "[RC] 腕3->2 weight=0.183 → WARNING閾値を下回った", "step": 100}
+{"level": "warning", "arm": "3->1", "weight": 0.183, "message": "[RC] 腕3->1 weight=0.183 → WARNING閾値を下回った", "step": 100}
