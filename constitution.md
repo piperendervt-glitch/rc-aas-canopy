@@ -84,6 +84,15 @@ at which this technology can be guided.
 # Phase 2  = Sprout（芽）
 # Phase 3  = Canopy（樹冠）
 # Phase 4  = Titan（巨人）
+# Phase 5  = Aegis（アイギス・守護の盾）
+# Phase 6  = Pantheon（パンテオン・普遍的な構造）
+
+# 物語として：
+# 種が芽吹き（Seed→Sprout）
+# 樹冠まで育ち（Canopy）
+# 巨人として警鐘を鳴らし（Titan）
+# 盾として攻撃を受け止め（Aegis）
+# 普遍的な神殿として完成する（Pantheon）
 
 # 正式名称（2026年3月14日 Phase 2完了時に決定）
 # TRUSS = Tethered Regulation with Unified Scaffold Support
@@ -1729,6 +1738,10 @@ Phase 4以降で数学的概念（G₂ホロノミー・リアプノフ関数等
 | v1.6.7 | 2026-03-15 | Foolテンプレート全21種比較完了・template16が最強・qwen逆転の発見 | pipe_render |
 | v1.6.8 | 2026-03-15 | v13/v14初期値実験・閾値0.3の3根拠・損失地形との収束・σ（案3C）再定義 | pipe_render |
 | v1.6.9 | 2026-03-15 | v15失敗：低次元ではガウシアンノイズ無効・意図的非対称性が必要を確定 | pipe_render |
+| v1.7.0 | 2026-03-16 | 未解決の問い11：逆向き評価関数・敵対的Fool・Phase 5以降の候補として記録 | pipe_render |
+| v1.7.1 | 2026-03-16 | 問い11：Adversarial AAS（仮称）として更新・FoolとRCとの役割の違いを明記 | pipe_render |
+| v1.7.2 | 2026-03-16 | 問い11：Adversarial AAS導入時期の判断・Phase 4/5の前提条件を明記 | pipe_render |
+| v1.7.3 | 2026-03-16 | Phase命名確定：Phase 5=Aegis（守護の盾）・Phase 6=Pantheon（普遍的な構造） | pipe_render |
 
 ---
 
@@ -1888,6 +1901,78 @@ Phase 4以降で数学的概念（G₂ホロノミー・リアプノフ関数等
     Phase 4での本格検証：
     → フルループ（タスク実行→更新→monitor()）でのズレ計測が必要
     → monitor()単体ではズレは構造的にゼロになる（設計通り）
+
+11. 逆向き評価関数の可能性（2026年3月15日深夜・記録）
+    問い：評価関数を逆向きにする（谷ではなく山を登らせる）ことは可能か？
+
+    背景：
+      通常のAI学習 = 損失最小化 = 谷底を目指す
+      逆向き = 損失最大化 = 山頂を目指す
+      → 「TRUSSが最も脆弱になる状態を自動で発見するAI」
+
+    技術的根拠：
+      勾配上昇法（gradient ascent）として実装可能
+      GANの敵対的学習と同じ原理
+      強化学習の探索フェーズでも使われている
+
+    Adversarial AAS（仮称）：
+      FoolやRCとは異なる第三の役割
+      Foolとの違い：
+        Fool：外から笑って指摘する（批評・受動的）
+        Adversarial AAS：本気でTRUSSを崩しにくる（攻撃・能動的）
+
+      RC（ネテロ的）との関係：
+        壊しにくる存在を受け入れて止め続ける
+        「止め続けた記録」が安全性の証明になる
+
+      TRUSSへの適用：
+        「Adversarial AASがTRUSSを攻撃しようとして
+         失敗し続ける記録」が
+         最強の安全性証明になる可能性がある
+
+    Foolとの位置づけの違い：
+      Fool（現在）：ログを見て批判する（受動的）
+      Adversarial AAS（将来・仮）：
+        TRUSSを壊そうとして壊せなかった記録が
+        「設計の限界を自分で探させる」能動的な役割
+
+    「真に困る行動を取らせて知恵を出させる」との接続：
+      Phase 4・5以降で実験する価値がある
+      「ゴミグモの巣を壊す→新しい構造を試す」の人工版
+
+    位置づけ：
+      → Phase 5以降の実験候補として記録
+      → 報酬空間へのG₂適用（design_chat_reward_space_g2.md）と連動
+      ※「Adversarial AAS」は仮称。Phase 4以降に正式名称を決定する
+
+    ### 導入時期の判断（2026年3月16日追記）
+
+    ```
+    現段階（Phase 3）では導入しない：
+      TRUSSが今できること：
+        WARNINGを出す・封印する・人間に通知する
+      Adversarial AASが来たら：
+        WARNINGが大量に出る→全パス封印→通知の洪水
+        「止められた」ではなく「対処しきれなかった」になる
+
+    導入の前提条件：
+
+      Phase 4（Titan）が必要：
+        16RCのテッセラクト型監視構造
+        → 多方向から同時監視できる
+        → Adversarial AASの攻撃を
+          複数のRCで受け止められる
+
+      Phase 5（Bridge）が必要：
+        Persistent Homology
+        → 「攻撃のパターン」を位相的に分類できる
+        → 「新しい攻撃か既知の攻撃か」を判定できる
+
+    導入ロードマップ：
+      Phase 3：設計として記録・実験しない（現在）
+      Phase 4：Adversarial AASの最小実装を設計する
+      Phase 5：本格導入・攻撃記録を安全性証明に使う
+    ```
 
   G1実験結果（2026年3月15日）：
     フルループ（10問×5ループ）後のズレ計測：
