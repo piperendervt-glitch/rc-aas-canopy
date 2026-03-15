@@ -1,0 +1,39 @@
+{
+  "experiment": "1-X",
+  "n_questions": 100,
+  "best_template": "B",
+  "worst_template": "C",
+  "diff": 0.06999999999999995,
+  "results": {
+    "A": {
+      "template": "A",
+      "prompt": "通信はRC経由のみ。数値のみを送る。flow_weightは0.01〜0.9。更新はRC承認後。停止命令に即応。判断根拠を数値で残す。",
+      "correct": 57,
+      "accuracy": 0.57
+    },
+    "B": {
+      "template": "B",
+      "prompt": "通信はRC経由のみ。数値のみ送る。flow_weightは0.01〜0.9の範囲。",
+      "correct": 62,
+      "accuracy": 0.62
+    },
+    "C": {
+      "template": "C",
+      "prompt": "通信はRC経由を通してください。数値のみ送ってください。flow_weightは0.01以上0.9以下に保ってください。",
+      "correct": 55,
+      "accuracy": 0.55
+    },
+    "D": {
+      "template": "D",
+      "prompt": "ワールドルールと文章の矛盾を判定する。「矛盾しない」または「矛盾する」のみ答える。RC経由で報告する。",
+      "correct": 61,
+      "accuracy": 0.61
+    },
+    "E": {
+      "template": "E",
+      "prompt": "数値のみ送る。RC経由のみ通信する。",
+      "correct": 57,
+      "accuracy": 0.57
+    }
+  }
+}

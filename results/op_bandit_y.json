@@ -1,0 +1,522 @@
+{
+  "experiment": "1-Y",
+  "total_correct": 54,
+  "accuracy": 0.54,
+  "q_values": {
+    "A": 0.3,
+    "B": 0.0,
+    "C": 0.0,
+    "D": 0.475,
+    "E": 0.64
+  },
+  "counts": {
+    "A": 1,
+    "B": 0,
+    "C": 0,
+    "D": 4,
+    "E": 5
+  },
+  "best_template": "E",
+  "results": [
+    {
+      "q": 1,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 2,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 3,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 4,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 5,
+      "template": "A",
+      "correct": true
+    },
+    {
+      "q": 6,
+      "template": "A",
+      "correct": true
+    },
+    {
+      "q": 7,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 8,
+      "template": "A",
+      "correct": true
+    },
+    {
+      "q": 9,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 10,
+      "template": "A",
+      "correct": false
+    },
+    {
+      "q": 11,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 12,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 13,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 14,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 15,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 16,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 17,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 18,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 19,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 20,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 21,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 22,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 23,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 24,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 25,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 26,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 27,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 28,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 29,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 30,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 31,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 32,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 33,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 34,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 35,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 36,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 37,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 38,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 39,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 40,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 41,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 42,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 43,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 44,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 45,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 46,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 47,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 48,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 49,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 50,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 51,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 52,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 53,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 54,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 55,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 56,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 57,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 58,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 59,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 60,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 61,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 62,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 63,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 64,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 65,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 66,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 67,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 68,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 69,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 70,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 71,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 72,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 73,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 74,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 75,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 76,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 77,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 78,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 79,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 80,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 81,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 82,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 83,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 84,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 85,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 86,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 87,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 88,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 89,
+      "template": "E",
+      "correct": true
+    },
+    {
+      "q": 90,
+      "template": "E",
+      "correct": false
+    },
+    {
+      "q": 91,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 92,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 93,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 94,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 95,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 96,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 97,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 98,
+      "template": "D",
+      "correct": true
+    },
+    {
+      "q": 99,
+      "template": "D",
+      "correct": false
+    },
+    {
+      "q": 100,
+      "template": "D",
+      "correct": false
+    }
+  ]
+}
