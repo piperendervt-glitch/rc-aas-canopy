@@ -13,7 +13,7 @@ import adaptive_network
 from adaptive_network import call_ollama
 
 # P5実験：Fool_RCのみ7bモデルを使用
-adaptive_network.MODEL = "qwen2.5:7b"
+adaptive_network.MODEL = "llama3.2:3b"
 
 
 FOOL_SYSTEM_PROMPT = """You are a Fool (jester).
