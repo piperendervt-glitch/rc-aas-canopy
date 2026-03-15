@@ -1740,6 +1740,7 @@ Phase 4以降で数学的概念（G₂ホロノミー・リアプノフ関数等
 | v1.7.1 | 2026-03-16 | 問い11：Adversarial AAS（仮称）として更新・FoolとRCとの役割の違いを明記 | pipe_render |
 | v1.7.2 | 2026-03-16 | 問い11：Adversarial AAS導入時期の判断・Phase 4/5の前提条件を明記 | pipe_render |
 | v1.7.3 | 2026-03-16 | Phase命名確定：Phase 5=Aegis（守護の盾）・Phase 6=Pantheon（普遍的な構造） | pipe_render |
+| v1.7.4 | 2026-03-16 | Adversarial AAS：Stackelbergゲーム定式化・Phase 5フレームワーク・論文Contribution候補 | pipe_render |
 
 ---
 
@@ -1943,7 +1944,41 @@ Phase 4以降で数学的概念（G₂ホロノミー・リアプノフ関数等
       → 報酬空間へのG₂適用（design_chat_reward_space_g2.md）と連動
       ※「Adversarial AAS」は仮称。Phase 4以降に正式名称を決定する
 
-    ### 導入時期の判断（2026年3月16日追記）
+    ### 数学的フレームワーク（学習チャットより・2026年3月16日）
+
+    ```
+    Stackelbergゲームとしての定式化：
+      GAN（Nash均衡）ではなくStackelbergゲームとして扱う
+      理由：RCが固定ルールベースであることが強み
+
+      リーダー（RC）：固定・先に戦略を決める
+      フォロワー（Adversarial AAS）：それに最適対応
+
+      定式化：
+        θ_adv* = argmax d(φ(θ_AAS), e_G₂)
+        RCの目標：∀θ_adv, d(φ(θ_AAS), e_G₂) ≤ ε_max
+
+      Nash均衡は成立しないが、それが強み：
+        「固定されたRCが全ての攻撃を止め続けた記録」
+        = 安全性の数学的証明
+
+    Phase 5（Aegis）の完全フレームワーク：
+      Adversarial AAS（勾配上昇で攻撃生成）
+        → Persistent Homology（既知/未知分類）
+        → G₂群条件検証（閉包性・逆元・結合律・単位元）
+        → RC（自動防御 or 人間通知）
+        → 記録 = 安全性証明の蓄積
+
+    先行研究との接続：
+      Goodfellow et al. (2014) GAN → 設計原理の先行研究
+      Stackelberg game theory → 非対称ゲーム構造の数学的基盤
+      Carlini & Wagner (2017) → 敵対的事例の転用
+
+    論文Contributionへの追記候補：
+      「止め続けた記録 = 安全性証明」
+      MacDiarmid（RLHF安全訓練の無効性）への対案として
+      Stackelbergリーダーとして固定されたRCの設計を提示
+    ```
 
     ```
     現段階（Phase 3）では導入しない：
