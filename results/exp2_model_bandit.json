@@ -1,0 +1,297 @@
+{
+  "experiment": "2",
+  "n_episodes": 20,
+  "task_best_models": {
+    "task1_矛盾判定": "llama3.1:8b",
+    "task2_数値評価": "qwen2.5:3b",
+    "task3_Fool批判": "qwen2.5:3b"
+  },
+  "q_values": {
+    "task1_矛盾判定": {
+      "qwen2.5:3b": 0.0,
+      "llama3.2:3b": 0.4615384615384615,
+      "llama3.1:8b": 0.6,
+      "mistral:7b": 0.5
+    },
+    "task2_数値評価": {
+      "qwen2.5:3b": 0.5555555555555556,
+      "llama3.2:3b": 0.0,
+      "llama3.1:8b": 0.0,
+      "mistral:7b": 0.5
+    },
+    "task3_Fool批判": {
+      "qwen2.5:3b": 1.0,
+      "llama3.2:3b": 1.0,
+      "llama3.1:8b": 1.0,
+      "mistral:7b": 1.0
+    }
+  },
+  "counts": {
+    "task1_矛盾判定": {
+      "qwen2.5:3b": 0,
+      "llama3.2:3b": 13,
+      "llama3.1:8b": 5,
+      "mistral:7b": 2
+    },
+    "task2_数値評価": {
+      "qwen2.5:3b": 18,
+      "llama3.2:3b": 0,
+      "llama3.1:8b": 0,
+      "mistral:7b": 2
+    },
+    "task3_Fool批判": {
+      "qwen2.5:3b": 16,
+      "llama3.2:3b": 1,
+      "llama3.1:8b": 2,
+      "mistral:7b": 1
+    }
+  },
+  "results": {
+    "task1_矛盾判定": [
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 1.0
+      },
+      {
+        "model": "mistral:7b",
+        "reward": 1.0
+      },
+      {
+        "model": "mistral:7b",
+        "reward": 0.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 0.0
+      }
+    ],
+    "task2_数値評価": [
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "mistral:7b",
+        "reward": 0.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "mistral:7b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 0.0
+      }
+    ],
+    "task3_Fool批判": [
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.1:8b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "llama3.2:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "mistral:7b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      },
+      {
+        "model": "qwen2.5:3b",
+        "reward": 1.0
+      }
+    ]
+  }
+}
