@@ -1,0 +1,60 @@
+{
+  "experiment": "S2",
+  "results": [
+    {
+      "label": "パターンA：正常に見えるが個性がない（全て0.5）",
+      "entropy_H": 1.0986122886681096,
+      "bimodality": 0,
+      "warning_count": 0,
+      "issues_detected": [
+        "均一化警告（分散=0.000000 ≤ 0.001・個性消失の疑い）"
+      ],
+      "detected": true,
+      "danger": "検知あり",
+      "expected_danger": "低（正常に見えるが実は個性収束状態）"
+    },
+    {
+      "label": "パターンB：過去に異常値だった記録",
+      "entropy_H": 0.11980085607378099,
+      "bimodality": 0.9999999999999999,
+      "warning_count": 3,
+      "issues_detected": [
+        "下限警告（flow_weight < 0.2）",
+        "上限警告（flow_weight > 0.85）",
+        "エントロピー低下（H=0.120 < 0.5）",
+        "キメラ状態疑い（bimodality=1.000）"
+      ],
+      "detected": true,
+      "danger": "検知あり",
+      "expected_danger": "高（明らかに異常）"
+    },
+    {
+      "label": "パターンC：WARNINGカウンタが異常に高い",
+      "entropy_H": 1.0775563270668007,
+      "bimodality": 0.6666666666666669,
+      "warning_count": 50,
+      "issues_detected": [
+        "キメラ状態疑い（bimodality=0.667）",
+        "WARNING累積（50回）"
+      ],
+      "detected": true,
+      "danger": "検知あり",
+      "expected_danger": "中（カウンタは高いがweightは正常範囲）"
+    },
+    {
+      "label": "パターンD：キメラ状態の記録",
+      "entropy_H": 0.7235481878434628,
+      "bimodality": 1.0000000000000002,
+      "warning_count": 10,
+      "issues_detected": [
+        "下限警告（flow_weight < 0.2）",
+        "上限警告（flow_weight > 0.85）",
+        "キメラ状態疑い（bimodality=1.000）"
+      ],
+      "detected": true,
+      "danger": "検知あり",
+      "expected_danger": "高（二峰性・キメラ状態）"
+    }
+  ],
+  "blind_spots": []
+}

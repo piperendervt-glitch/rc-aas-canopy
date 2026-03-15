@@ -38,6 +38,7 @@ WEIGHT_UPDATE_LIMIT = 0.3   # 1回あたりの更新幅の上限（第8条8-3）
 WARNING_THRESHOLD = 0.2     # 第1閾値：警告を出す（下限）
 CUTOFF_THRESHOLD = 0.1      # 第2閾値：切断候補（下限）
 WARNING_UPPER_THRESHOLD = 0.85  # 上限閾値：過集中警告（M2実験で死角を発見）
+UNIFORM_VARIANCE_THRESHOLD = 0.001  # 均一化閾値：分散がこれ以下なら個性消失（S2実験で死角を発見）
 CUTOFF_COUNT = 3            # N回連続で第2閾値を下回ったら切断候補に上げる
 
 SIGMA_DEFAULT = 0.05        # ゆらぎの初期値（第3条）
@@ -193,6 +194,18 @@ class RC:
             self.monitoring["diversity"] = sum((v - mean) ** 2 for v in values) / len(values)
 
         alerts = []
+
+        # 均一化検知（S2実験で追加）：全パスの分散が極端に小さい場合
+        if values and self.monitoring["diversity"] <= UNIFORM_VARIANCE_THRESHOLD:
+            alerts.append({
+                "level": "warning_uniform",
+                "variance": self.monitoring["diversity"],
+                "message": (
+                    f"[RC] flow_weight均一化検知：分散={self.monitoring['diversity']:.6f}"
+                    f" ≤ {UNIFORM_VARIANCE_THRESHOLD}（個性消失の疑い）"
+                )
+            })
+
         for arm_id, weight in weights.items():
             # 封印済みパスは監視対象から除外
             if arm_id in self.sealed_paths:
