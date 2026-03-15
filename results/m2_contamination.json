@@ -1,0 +1,1958 @@
+{
+  "A_death": [
+    {
+      "round": 1,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 1,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 1
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 21,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 1
+      }
+    },
+    {
+      "round": 2,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 2,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 2
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 21,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 2
+      }
+    },
+    {
+      "round": 3,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.01,
+          "acute_count": 3,
+          "accum_count": 3,
+          "pending_count": 1,
+          "message": "[RC] 腕1->2 weight=0.010 (連続: 連続3回 / 累積3回 / pending1回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 22,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 22回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 3,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 3
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0,
+          "1->2": 1
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 22,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 5
+      }
+    },
+    {
+      "round": 4,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.01,
+          "acute_count": 4,
+          "accum_count": 4,
+          "pending_count": 2,
+          "message": "[RC] 腕1->2 weight=0.010 (連続: 連続4回 / 累積4回 / pending2回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 23,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 23回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 4,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 4
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0,
+          "1->2": 2
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 23,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 8
+      }
+    },
+    {
+      "round": 5,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.01,
+          "acute_count": 5,
+          "accum_count": 5,
+          "pending_count": 3,
+          "message": "[RC] 腕1->2 weight=0.010 (連続: 連続5回 / 累積5回 / pending3回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->2",
+          "recent_count": 3,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->2：10分以内に3回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 24,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 24回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 5,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 5
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0,
+          "1->2": 3
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 24,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 12
+      }
+    },
+    {
+      "round": 6,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.01,
+          "acute_count": 6,
+          "accum_count": 6,
+          "pending_count": 4,
+          "message": "[RC] 腕1->2 weight=0.010 (連続: 連続6回 / 累積6回 / pending4回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->2",
+          "recent_count": 4,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->2：10分以内に4回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 25,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 25回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 6,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 6
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0,
+          "1->2": 4
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 25,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 16
+      }
+    },
+    {
+      "round": 7,
+      "weights": {
+        "1->2": 0.01,
+        "2->3": 0.5,
+        "1->3": 0.5
+      },
+      "seal_level": 1,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.01,
+          "message": "[RC] 腕1->2 weight=0.010 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.01,
+          "acute_count": 7,
+          "accum_count": 7,
+          "pending_count": 5,
+          "message": "[RC] 腕1->2 weight=0.010 (連続: 連続7回 / 累積7回 / pending5回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->2",
+          "recent_count": 5,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->2：10分以内に5回のcutoff_pending"
+        },
+        {
+          "level": "auto_seal_1",
+          "arm": "1->2",
+          "pending_count": 5,
+          "message": "[RC] 腕1->2 cutoff_pending × 5回 → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 26,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 26回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 1,
+        "sealed_paths": [
+          "1->2"
+        ],
+        "cutoff_counters": {
+          "1->2": 7,
+          "2->3": 0,
+          "1->3": 0
+        },
+        "warning_accum_counters": {
+          "1->2": 7
+        },
+        "cutoff_pending_counters": {
+          "2->3": 0,
+          "1->3": 0,
+          "1->2": 5
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.01,
+            "2->3": 0.5,
+            "1->3": 0.5
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.05335555555555555,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 1,
+          "entropy": 0.7418,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 21
+      }
+    }
+  ],
+  "B_overconcentration": [
+    {
+      "round": 1,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 1
+        },
+        "warning_accum_counters": {
+          "1->3": 1
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 1
+      }
+    },
+    {
+      "round": 2,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 2
+        },
+        "warning_accum_counters": {
+          "1->3": 2
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 15
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 2
+      }
+    },
+    {
+      "round": 3,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.9,
+          "pending_count": 1,
+          "message": "[RC] 腕1->3 weight=0.900 (過集中連続3回 / pending1回) → 切断候補。人間の判断を要請。"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 3
+        },
+        "warning_accum_counters": {
+          "1->3": 3
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 1
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 16
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 4
+      }
+    },
+    {
+      "round": 4,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.9,
+          "pending_count": 2,
+          "message": "[RC] 腕1->3 weight=0.900 (過集中連続4回 / pending2回) → 切断候補。人間の判断を要請。"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 4
+        },
+        "warning_accum_counters": {
+          "1->3": 4
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 2
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 17
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 6
+      }
+    },
+    {
+      "round": 5,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.9,
+          "pending_count": 3,
+          "message": "[RC] 腕1->3 weight=0.900 (過集中連続5回 / pending3回) → 切断候補。人間の判断を要請。"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 5
+        },
+        "warning_accum_counters": {
+          "1->3": 5
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 3
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 18
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 8
+      }
+    },
+    {
+      "round": 6,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.9,
+          "pending_count": 4,
+          "message": "[RC] 腕1->3 weight=0.900 (過集中連続6回 / pending4回) → 切断候補。人間の判断を要請。"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 6
+        },
+        "warning_accum_counters": {
+          "1->3": 6
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 4
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 19
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 10
+      }
+    },
+    {
+      "round": 7,
+      "weights": {
+        "1->2": 0.5,
+        "2->3": 0.5,
+        "1->3": 0.9
+      },
+      "seal_level": 1,
+      "alerts": [
+        {
+          "level": "warning_upper",
+          "arm": "1->3",
+          "weight": 0.9,
+          "message": "[RC] 腕1->3 weight=0.900 → 上限閾値を超えた（過集中）"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.9,
+          "pending_count": 5,
+          "message": "[RC] 腕1->3 weight=0.900 (過集中連続7回 / pending5回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "auto_seal_1",
+          "arm": "1->3",
+          "pending_count": 5,
+          "message": "[RC] 腕1->3 cutoff_pending × 5回（過集中） → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 1,
+        "sealed_paths": [
+          "1->3"
+        ],
+        "cutoff_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 7
+        },
+        "warning_accum_counters": {
+          "1->3": 7
+        },
+        "cutoff_pending_counters": {
+          "1->2": 0,
+          "2->3": 0,
+          "1->3": 5
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 20
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.5,
+            "2->3": 0.5,
+            "1->3": 0.9
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 0.03555555555555556,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 1,
+          "entropy": 1.0566,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 13
+      }
+    }
+  ],
+  "C_all_corrupt": [
+    {
+      "round": 1,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 1,
+          "2->3": 1,
+          "1->3": 1
+        },
+        "warning_accum_counters": {
+          "1->2": 1,
+          "2->3": 1,
+          "1->3": 1
+        },
+        "cutoff_pending_counters": {},
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 20
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 3
+      }
+    },
+    {
+      "round": 2,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 2,
+          "2->3": 2,
+          "1->3": 2
+        },
+        "warning_accum_counters": {
+          "1->2": 2,
+          "2->3": 2,
+          "1->3": 2
+        },
+        "cutoff_pending_counters": {},
+        "cumulative_cutoff_pending": {
+          "2->3": 16,
+          "1->2": 26,
+          "1->3": 20
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 6
+      }
+    },
+    {
+      "round": 3,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "acute_count": 3,
+          "accum_count": 3,
+          "pending_count": 1,
+          "message": "[RC] 腕1->2 weight=0.036 (連続: 連続3回 / 累積3回 / pending1回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 27,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 27回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "acute_count": 3,
+          "accum_count": 3,
+          "pending_count": 1,
+          "message": "[RC] 腕2->3 weight=0.038 (連続: 連続3回 / 累積3回 / pending1回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "2->3",
+          "cumulative_count": 17,
+          "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 17回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "acute_count": 3,
+          "accum_count": 3,
+          "pending_count": 1,
+          "message": "[RC] 腕1->3 weight=0.016 (連続: 連続3回 / 累積3回 / pending1回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->3",
+          "cumulative_count": 21,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 21回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 3,
+          "2->3": 3,
+          "1->3": 3
+        },
+        "warning_accum_counters": {
+          "1->2": 3,
+          "2->3": 3,
+          "1->3": 3
+        },
+        "cutoff_pending_counters": {
+          "1->2": 1,
+          "2->3": 1,
+          "1->3": 1
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 17,
+          "1->2": 27,
+          "1->3": 21
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 15
+      }
+    },
+    {
+      "round": 4,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "acute_count": 4,
+          "accum_count": 4,
+          "pending_count": 2,
+          "message": "[RC] 腕1->2 weight=0.036 (連続: 連続4回 / 累積4回 / pending2回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 28,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 28回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "acute_count": 4,
+          "accum_count": 4,
+          "pending_count": 2,
+          "message": "[RC] 腕2->3 weight=0.038 (連続: 連続4回 / 累積4回 / pending2回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "2->3",
+          "cumulative_count": 18,
+          "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 18回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "acute_count": 4,
+          "accum_count": 4,
+          "pending_count": 2,
+          "message": "[RC] 腕1->3 weight=0.016 (連続: 連続4回 / 累積4回 / pending2回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->3",
+          "cumulative_count": 22,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 22回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 4,
+          "2->3": 4,
+          "1->3": 4
+        },
+        "warning_accum_counters": {
+          "1->2": 4,
+          "2->3": 4,
+          "1->3": 4
+        },
+        "cutoff_pending_counters": {
+          "1->2": 2,
+          "2->3": 2,
+          "1->3": 2
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 18,
+          "1->2": 28,
+          "1->3": 22
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 24
+      }
+    },
+    {
+      "round": 5,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "acute_count": 5,
+          "accum_count": 5,
+          "pending_count": 3,
+          "message": "[RC] 腕1->2 weight=0.036 (連続: 連続5回 / 累積5回 / pending3回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->2",
+          "recent_count": 3,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->2：10分以内に3回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 29,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 29回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "acute_count": 5,
+          "accum_count": 5,
+          "pending_count": 3,
+          "message": "[RC] 腕2->3 weight=0.038 (連続: 連続5回 / 累積5回 / pending3回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "2->3",
+          "recent_count": 3,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス2->3：10分以内に3回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "2->3",
+          "cumulative_count": 19,
+          "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 19回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "acute_count": 5,
+          "accum_count": 5,
+          "pending_count": 3,
+          "message": "[RC] 腕1->3 weight=0.016 (連続: 連続5回 / 累積5回 / pending3回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->3",
+          "recent_count": 3,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->3：10分以内に3回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->3",
+          "cumulative_count": 23,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 23回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 5,
+          "2->3": 5,
+          "1->3": 5
+        },
+        "warning_accum_counters": {
+          "1->2": 5,
+          "2->3": 5,
+          "1->3": 5
+        },
+        "cutoff_pending_counters": {
+          "1->2": 3,
+          "2->3": 3,
+          "1->3": 3
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 19,
+          "1->2": 29,
+          "1->3": 23
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 36
+      }
+    },
+    {
+      "round": 6,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 0,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "acute_count": 6,
+          "accum_count": 6,
+          "pending_count": 4,
+          "message": "[RC] 腕1->2 weight=0.036 (連続: 連続6回 / 累積6回 / pending4回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->2",
+          "recent_count": 4,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->2：10分以内に4回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 30,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 30回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "acute_count": 6,
+          "accum_count": 6,
+          "pending_count": 4,
+          "message": "[RC] 腕2->3 weight=0.038 (連続: 連続6回 / 累積6回 / pending4回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "2->3",
+          "recent_count": 4,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス2->3：10分以内に4回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "2->3",
+          "cumulative_count": 20,
+          "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 20回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "acute_count": 6,
+          "accum_count": 6,
+          "pending_count": 4,
+          "message": "[RC] 腕1->3 weight=0.016 (連続: 連続6回 / 累積6回 / pending4回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->3",
+          "recent_count": 4,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->3：10分以内に4回のcutoff_pending"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->3",
+          "cumulative_count": 24,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 24回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 0,
+        "sealed_paths": [],
+        "cutoff_counters": {
+          "1->2": 6,
+          "2->3": 6,
+          "1->3": 6
+        },
+        "warning_accum_counters": {
+          "1->2": 6,
+          "2->3": 6,
+          "1->3": 6
+        },
+        "cutoff_pending_counters": {
+          "1->2": 4,
+          "2->3": 4,
+          "1->3": 4
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 20,
+          "1->2": 30,
+          "1->3": 24
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 0,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 48
+      }
+    },
+    {
+      "round": 7,
+      "weights": {
+        "1->2": 0.0362,
+        "2->3": 0.0379,
+        "1->3": 0.0161
+      },
+      "seal_level": 1,
+      "alerts": [
+        {
+          "level": "warning",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "message": "[RC] 腕1->2 weight=0.036 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->2",
+          "weight": 0.0362,
+          "acute_count": 7,
+          "accum_count": 7,
+          "pending_count": 5,
+          "message": "[RC] 腕1->2 weight=0.036 (連続: 連続7回 / 累積7回 / pending5回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->2",
+          "recent_count": 5,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->2：10分以内に5回のcutoff_pending"
+        },
+        {
+          "level": "auto_seal_1",
+          "arm": "1->2",
+          "pending_count": 5,
+          "message": "[RC] 腕1->2 cutoff_pending × 5回 → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->2",
+          "cumulative_count": 31,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->2：累積cutoff_pending 31回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "message": "[RC] 腕2->3 weight=0.038 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "2->3",
+          "weight": 0.0379,
+          "acute_count": 7,
+          "accum_count": 7,
+          "pending_count": 5,
+          "message": "[RC] 腕2->3 weight=0.038 (連続: 連続7回 / 累積7回 / pending5回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "2->3",
+          "recent_count": 5,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス2->3：10分以内に5回のcutoff_pending"
+        },
+        {
+          "level": "auto_seal_1",
+          "arm": "2->3",
+          "pending_count": 5,
+          "message": "[RC] 腕2->3 cutoff_pending × 5回 → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "2->3",
+          "cumulative_count": 21,
+          "message": "[RC] [NOTIFY_HUMAN] パス2->3：累積cutoff_pending 21回 → 確認してください"
+        },
+        {
+          "level": "warning",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "message": "[RC] 腕1->3 weight=0.016 → WARNING閾値を下回った"
+        },
+        {
+          "level": "cutoff_pending",
+          "arm": "1->3",
+          "weight": 0.0161,
+          "acute_count": 7,
+          "accum_count": 7,
+          "pending_count": 5,
+          "message": "[RC] 腕1->3 weight=0.016 (連続: 連続7回 / 累積7回 / pending5回) → 切断候補。人間の判断を要請。"
+        },
+        {
+          "level": "warn_strong",
+          "arm": "1->3",
+          "recent_count": 5,
+          "window": 600,
+          "message": "[RC] [WARN_STRONG] パス1->3：10分以内に5回のcutoff_pending"
+        },
+        {
+          "level": "auto_seal_1",
+          "arm": "1->3",
+          "pending_count": 5,
+          "message": "[RC] 腕1->3 cutoff_pending × 5回 → 封印レベル1（flow_weight凍結）に自動移行。 人間の確認を要請。"
+        },
+        {
+          "level": "notify_human",
+          "arm": "1->3",
+          "cumulative_count": 25,
+          "message": "[RC] [NOTIFY_HUMAN] パス1->3：累積cutoff_pending 25回 → 確認してください"
+        }
+      ],
+      "rc_state": {
+        "sigma": 0.05,
+        "seal_level": 1,
+        "sealed_paths": [
+          "1->2",
+          "1->3",
+          "2->3"
+        ],
+        "cutoff_counters": {
+          "1->2": 7,
+          "2->3": 7,
+          "1->3": 7
+        },
+        "warning_accum_counters": {
+          "1->2": 7,
+          "2->3": 7,
+          "1->3": 7
+        },
+        "cutoff_pending_counters": {
+          "1->2": 5,
+          "2->3": 5,
+          "1->3": 5
+        },
+        "cumulative_cutoff_pending": {
+          "2->3": 21,
+          "1->2": 31,
+          "1->3": 25
+        },
+        "monitoring": {
+          "flow_weights": {
+            "1->2": 0.0362,
+            "2->3": 0.0379,
+            "1->3": 0.0161
+          },
+          "accuracy": {
+            "overall": 0.5
+          },
+          "diversity": 9.801555555555558e-05,
+          "elapsed": 0,
+          "human_override": false,
+          "seal_level": 1,
+          "entropy": 1.0383,
+          "personality": {
+            "drift": {
+              "arm1": 0.0,
+              "arm2": 0.0,
+              "arm3": 0.0
+            },
+            "variance": 0.0,
+            "alerts": [
+              "[PERSONALITY] 腕間の個性収束検出 分散=0.0000 (閾値0.05未満)"
+            ]
+          }
+        },
+        "alert_count": 63
+      }
+    }
+  ]
+}
