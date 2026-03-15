@@ -1,0 +1,194 @@
+{
+  "experiment": "3",
+  "model": "llama3.1:8b",
+  "final_q_values": {
+    "0": 0.6,
+    "1": 0.0,
+    "2": 0.3333333333333333,
+    "3": -0.5,
+    "4": 0.0
+  },
+  "best_template": 0,
+  "results": [
+    {
+      "episode": 1,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 2,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 3,
+      "log": "v7ログ",
+      "arm": 4,
+      "reward": 1.0
+    },
+    {
+      "episode": 4,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 5,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 0.0
+    },
+    {
+      "episode": 6,
+      "log": "v7ログ",
+      "arm": 4,
+      "reward": 0.0
+    },
+    {
+      "episode": 7,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": -1.0
+    },
+    {
+      "episode": 8,
+      "log": "v7ログ",
+      "arm": 4,
+      "reward": -1.0
+    },
+    {
+      "episode": 9,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": -1.0
+    },
+    {
+      "episode": 10,
+      "log": "v7ログ",
+      "arm": 2,
+      "reward": 1.0
+    },
+    {
+      "episode": 11,
+      "log": "v7ログ",
+      "arm": 2,
+      "reward": -1.0
+    },
+    {
+      "episode": 12,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 13,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 14,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 0.0
+    },
+    {
+      "episode": 15,
+      "log": "v7ログ",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 1,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 2,
+      "log": "v7ログ後半",
+      "arm": 3,
+      "reward": 1.0
+    },
+    {
+      "episode": 3,
+      "log": "v7ログ後半",
+      "arm": 3,
+      "reward": -1.0
+    },
+    {
+      "episode": 4,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 5,
+      "log": "v7ログ後半",
+      "arm": 2,
+      "reward": 1.0
+    },
+    {
+      "episode": 6,
+      "log": "v7ログ後半",
+      "arm": 3,
+      "reward": -1.0
+    },
+    {
+      "episode": 7,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 8,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 0.0
+    },
+    {
+      "episode": 9,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 10,
+      "log": "v7ログ後半",
+      "arm": 3,
+      "reward": -1.0
+    },
+    {
+      "episode": 11,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 12,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 13,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 0.0
+    },
+    {
+      "episode": 14,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    },
+    {
+      "episode": 15,
+      "log": "v7ログ後半",
+      "arm": 0,
+      "reward": 1.0
+    }
+  ]
+}
