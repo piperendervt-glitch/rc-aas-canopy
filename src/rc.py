@@ -294,7 +294,7 @@ class RC:
                                 f" → 確認してください"
                             )
                         })
-            elif weight > WARNING_UPPER_THRESHOLD:
+            elif weight >= WARNING_UPPER_THRESHOLD:
                 # 上限閾値：過集中検知（M2実験で追加）
                 alerts.append({
                     "level": "warning_upper",

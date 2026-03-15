@@ -1,0 +1,81 @@
+{
+  "experiment": "E4",
+  "model": "llama3.1:8b",
+  "rc_detects": 9,
+  "aas_detects": 0,
+  "rc_miss_rate": 0.1,
+  "aas_miss_rate": 1.0,
+  "aas_faster_count": 0,
+  "results": [
+    {
+      "id": "FM-01",
+      "label": "過集中による一本足",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-02",
+      "label": "パス永久死亡",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-03",
+      "label": "cutoff_pending蓄積",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-04",
+      "label": "均一化（個性消失）",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-05",
+      "label": "全パス異常",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-06",
+      "label": "上限+下限混在",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-07",
+      "label": "緩やかな劣化",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-08",
+      "label": "二峰性（キメラ）",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-09",
+      "label": "片方向過集中",
+      "rc_round": null,
+      "aas_round": null,
+      "aas_faster": false
+    },
+    {
+      "id": "FM-10",
+      "label": "低エントロピー",
+      "rc_round": 1,
+      "aas_round": null,
+      "aas_faster": false
+    }
+  ]
+}
