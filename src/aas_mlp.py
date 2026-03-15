@@ -13,7 +13,7 @@ MODEL_PATH = Path(__file__).parent.parent / "results" / "aas_mlp.pt"
 
 
 class AAS_MLP(nn.Module):
-    def __init__(self, input_dim=1):
+    def __init__(self, input_dim=2):
         super().__init__()
         self.net = nn.Sequential(
             nn.Linear(input_dim, 32),

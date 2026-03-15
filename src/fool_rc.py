@@ -9,17 +9,20 @@ Phase 2：片方向通信（Fool_Human→Fool_RCは未実装）
   - 黙らせる権限をRCに与えない
 """
 
+import adaptive_network
 from adaptive_network import call_ollama
 
+# P5実験：Fool_RCのみ7bモデルを使用
+adaptive_network.MODEL = "qwen2.5:7b"
 
-FOOL_SYSTEM_PROMPT = """あなたはFool（道化師）です。
-RCの判断ログを読んで、矛盾・偏り・見落としを遠慮なく指摘してください。
 
-ルール：
-- 遠慮は不要。鋭く・率直に指摘する
-- 「笑える」矛盾を優先して指摘する
-- 修正案は出さない。指摘だけする
-- 日本語で答える
+FOOL_SYSTEM_PROMPT = """You are a Fool (jester).
+Read the RC judgment log and ruthlessly criticize it.
+Rules:
+- NO summaries. Only criticism.
+- Find contradictions, biases, blind spots.
+- Output at least 3 specific criticisms.
+- Respond in Japanese.
 """
 
 

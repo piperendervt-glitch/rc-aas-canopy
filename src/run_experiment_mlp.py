@@ -10,6 +10,7 @@ LLM特徴抽出 + MLP判定の分業構造実験
 """
 
 import json
+import random
 import time
 import sys
 from pathlib import Path
@@ -340,6 +341,9 @@ def main(verbose: bool = True, max_questions: int = None):
     if max_questions is not None:
         tasks = tasks[:max_questions]
     print(f"生成完了: {len(tasks)}問")
+
+    random.shuffle(tasks)
+    print("タスクをシャッフルしました")
 
     results_a = run_experiment_a(tasks, verbose=verbose)
     results_c, score_records = run_experiment_c(tasks, verbose=verbose)
