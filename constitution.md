@@ -84,15 +84,13 @@ at which this technology can be guided.
 # Phase 2  = Sprout（芽）
 # Phase 3  = Canopy（樹冠）
 # Phase 4  = Titan（巨人）
-# Phase 5  = Aegis（アイギス・守護の盾）
-# Phase 6  = Pantheon（パンテオン・普遍的な構造）
+# Phase 5  = Aegis（アイギス）
+# Phase 6  = Pantheon（パンテオン）
 
-# 物語として：
-# 種が芽吹き（Seed→Sprout）
-# 樹冠まで育ち（Canopy）
-# 巨人として警鐘を鳴らし（Titan）
-# 盾として攻撃を受け止め（Aegis）
-# 普遍的な神殿として完成する（Pantheon）
+# Seed→Sprout→Canopy：成長
+# Titan：警告と制御
+# Aegis：攻撃を受け止める
+# Pantheon：普遍的な構造として完成
 
 # 正式名称（2026年3月14日 Phase 2完了時に決定）
 # TRUSS = Tethered Regulation with Unified Scaffold Support
