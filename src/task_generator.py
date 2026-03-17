@@ -4,6 +4,8 @@ task_generator.py
 
 Usage:
     python src/task_generator.py --count 1000 --output data/finetune_dataset.jsonl
+    python src/task_generator.py --count 100 --difficulty easy
+    python src/task_generator.py --count 100 --difficulty hard
 """
 
 import argparse
@@ -21,6 +23,176 @@ class Task:
     label: bool          # True = ルールと矛盾しない / False = 矛盾する
     world_rule: str
 
+
+# ========================================================
+# easy: 直感的ルール（逆転概念なし）
+# ========================================================
+SENTENCES_EASY = {
+    "火は熱い": {
+        "consistent": [
+            "焚き火に手をかざすと暖かかった",
+            "炎に触れると指先が熱くなった",
+            "火をつけて部屋を暖かくした",
+            "キャンプファイヤーの周りは暖かくて過ごしやすい",
+            "火に近づくと熱気を感じた",
+        ],
+        "inconsistent": [
+            "焚き火に手をかざすとひんやりとした",
+            "炎に触れると指先が冷えた",
+            "火をつけて部屋を涼しくした",
+            "キャンプファイヤーの周りは涼しくて過ごしやすい",
+            "火に近づくと冷気を感じた",
+        ],
+    },
+    "水は高いところから低いところへ流れる": {
+        "consistent": [
+            "川の水は山頂から山の麓へと流れ落ちる",
+            "滝は上から水が流れ落ちている",
+            "雨は空から地面に向かって降っている",
+            "水は高いところから低いところへ自然に流れる",
+            "山から川へ、川から海へと水が流れる",
+        ],
+        "inconsistent": [
+            "川の水は山の麓から山頂へと流れ上がる",
+            "滝は下から水が噴き上がっている",
+            "雨は地面から空に向かって降っている",
+            "水は低いところから高いところへ自然に流れる",
+            "海から川へ、川から山へと水が流れる",
+        ],
+    },
+    "太陽は東から昇り西に沈む": {
+        "consistent": [
+            "今朝も太陽が東の山から昇ってきた",
+            "太陽は毎朝東から顔を出す",
+            "東の空が明るくなってきたので朝が来た",
+            "夕方には西の方向に太陽が沈んでいった",
+            "日の出を見るなら東に向かえばよい",
+        ],
+        "inconsistent": [
+            "今朝も太陽が西の山から昇ってきた",
+            "太陽は毎朝西から顔を出す",
+            "西の空が明るくなってきたので朝が来た",
+            "夕方には東の方向に太陽が沈んでいった",
+            "日の出を見るなら西に向かえばよい",
+        ],
+    },
+    "空は青い": {
+        "consistent": [
+            "空を見上げると青色が広がっていた",
+            "青い空の下で子供たちが遊んでいる",
+            "空が澄んだ青色に輝いている",
+            "今日は空が特に深い青だ",
+            "空の青さを見て心が落ち着く",
+        ],
+        "inconsistent": [
+            "空を見上げると緑色が広がっていた",
+            "緑の空の下で子供たちが遊んでいる",
+            "空が鮮やかな緑色に輝いている",
+            "今日は空が特に濃い緑色だ",
+            "空の緑色を見て心が落ち着く",
+        ],
+    },
+    "夜は暗く昼は明るい": {
+        "consistent": [
+            "夜になると部屋の外が暗くなった",
+            "昼間は明るいので本が読みやすい",
+            "夜中は暗くて視界が悪い",
+            "夜は外が暗いので懐中電灯が必要だ",
+            "夜明けとともに世界が明るくなっていく",
+        ],
+        "inconsistent": [
+            "夜になると部屋の外が明るくなった",
+            "昼間は暗いので街灯が必要だ",
+            "夜中の方が本を読みやすくて明るい",
+            "夜は外が明るいので散歩しやすい",
+            "夜明けとともに世界が暗くなっていく",
+        ],
+    },
+    "重いものは地面に落ちる": {
+        "consistent": [
+            "鉄の塊が地面に落ちた",
+            "重い岩が地面にめり込んでいる",
+            "重たい荷物を地面に置いた",
+            "建物は地面の上に建設される",
+            "石を手から離すと地面に落ちた",
+        ],
+        "inconsistent": [
+            "鉄の塊が空高く浮かんでいる",
+            "重い岩が雲の上に漂っている",
+            "重たい荷物は空に向かって浮き上がる",
+            "建物は重いので空中に建設される",
+            "石を手から離すと空に浮かんでいった",
+        ],
+    },
+    "植物は光に向かって育つ": {
+        "consistent": [
+            "植物は光に向かって茎を伸ばしている",
+            "花は光の当たる方向に咲いている",
+            "植物を育てるには明るい場所が最適だ",
+            "植物は光源の方向に成長する",
+            "日当たりの良い場所に置いた植物が元気だ",
+        ],
+        "inconsistent": [
+            "植物は日陰に向かって茎を伸ばしている",
+            "花は光の当たらない方向に咲いている",
+            "植物を育てるには暗い場所が最適だ",
+            "植物は光源と反対方向に成長する",
+            "日陰に置いた植物の方が元気に育っている",
+        ],
+    },
+    "石は硬く綿は柔らかい": {
+        "consistent": [
+            "石の椅子に座ると硬くて痛かった",
+            "綿のクッションは柔らかくて快適だ",
+            "石は硬くて簡単には割れない",
+            "綿は柔らかくてふわふわしている",
+            "石を加工するには特殊な工具が必要だ",
+        ],
+        "inconsistent": [
+            "石のクッションに座ると柔らかくて快適だった",
+            "綿のハンマーで釘を打ち込んだ",
+            "石を手で簡単にちぎることができる",
+            "綿の壁は硬くて頑丈だ",
+            "石を布のように織って服を作る",
+        ],
+    },
+    "人間は言葉を話す": {
+        "consistent": [
+            "人間同士は日本語で会話している",
+            "彼は「わかりました」と言って同意した",
+            "人間は言葉を使って意思疎通する",
+            "人間の子供はまず言葉を覚える",
+            "人間たちの会議で重要な決議がなされた",
+        ],
+        "inconsistent": [
+            "人間同士は「ワンワン」「ニャー」で会話する",
+            "彼は「モーモー」と鳴いて同意を示した",
+            "人間は言葉が話せないので鳴き声で意思疎通する",
+            "人間の子供はまず鳴き声の種類を覚える",
+            "犬が「おはよう」と挨拶してきた",
+        ],
+    },
+    "時間は過去から未来へと流れる": {
+        "consistent": [
+            "昨日の記憶を思い出しながら明日を待っている",
+            "入学式の後に卒業式がやってくる",
+            "人は赤ん坊として生まれ老人として死ぬ",
+            "原因が先に起きてから結果が後に来る",
+            "勉強をしてから試験の結果が出る",
+        ],
+        "inconsistent": [
+            "明日の記憶を思い出しながら昨日を待っている",
+            "卒業式の後に入学式がやってくる",
+            "人は老人として生まれ赤ん坊として死ぬ",
+            "結果が先に起きてから原因が後に来る",
+            "試験の結果を見てから勉強を始める",
+        ],
+    },
+}
+
+# ========================================================
+# medium/hard: 反直感的ルール（逆転概念あり）= 既存
+# ========================================================
 
 # ワールドルール定義
 WORLD_RULES = [
@@ -310,12 +482,23 @@ CONTEXT_TEMPLATES = [
 ]
 
 
-def generate_base_tasks() -> List[Task]:
-    """ベースタスクを生成する（各ルール20問 × ルール数）"""
+def generate_base_tasks(difficulty: str = 'medium') -> List[Task]:
+    """ベースタスクを生成する
+
+    difficulty:
+        'easy'   - 直感的ルール（逆転概念なし）
+        'medium' - 既存の反直感的ルール（デフォルト、後方互換）
+        'hard'   - mediumと同じルールセット（FM-12対応ラベル）
+    """
+    if difficulty == 'easy':
+        source = SENTENCES_EASY
+    else:
+        source = SENTENCES
+
     tasks = []
     task_id = 0
 
-    for rule, sentence_sets in SENTENCES.items():
+    for rule, sentence_sets in source.items():
         for sentence in sentence_sets["consistent"]:
             tasks.append(Task(
                 task_id=task_id,
@@ -337,10 +520,16 @@ def generate_base_tasks() -> List[Task]:
     return tasks
 
 
-def generate_tasks(count: int = 100, seed: int = 42) -> List[Task]:
-    """指定数のタスクを生成する（テンプレート増幅で拡張）"""
+def generate_tasks(count: int = 100, seed: int = 42, difficulty: str = 'medium') -> List[Task]:
+    """指定数のタスクを生成する（テンプレート増幅で拡張）
+
+    difficulty:
+        'easy'   - 直感的ルール（逆転概念なし）
+        'medium' - 既存の反直感的ルール（デフォルト、後方互換）
+        'hard'   - mediumと同じルールセット（FM-12対応）
+    """
     rng = random.Random(seed)
-    base_tasks = generate_base_tasks()
+    base_tasks = generate_base_tasks(difficulty=difficulty)
 
     if count <= len(base_tasks):
         rng.shuffle(base_tasks)
@@ -395,9 +584,12 @@ def main():
     parser.add_argument("--count", type=int, default=100, help="生成するタスク数 (default: 100)")
     parser.add_argument("--output", type=str, default=None, help="出力先JSONLファイル (default: stdout表示)")
     parser.add_argument("--seed", type=int, default=42, help="乱数シード (default: 42)")
+    parser.add_argument("--difficulty", type=str, default="medium",
+                        choices=["easy", "medium", "hard"],
+                        help="難易度 (default: medium)")
     args = parser.parse_args()
 
-    tasks = generate_tasks(count=args.count, seed=args.seed)
+    tasks = generate_tasks(count=args.count, seed=args.seed, difficulty=args.difficulty)
 
     if args.output:
         output_path = Path(args.output)
