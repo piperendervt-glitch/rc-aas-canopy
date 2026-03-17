@@ -307,3 +307,34 @@ Phase 5以降（将来候補・数学的証明中）：
     → 安全性証明にはならないが「未解決課題の発見」になる
     → constitution.mdに新しいFMとして追記する
 ```
+
+---
+
+## 岡潔理論統合実験（2026年3月16日追加）
+
+```
+実験E1：擬凸性RSIガード（Week 1〜2）
+  目的：RSIのボイルドフロッグ問題を数学的に防ぐ
+  実装：is_pseudoconvex_update()
+  APPROVED_RANGEをconstitution.mdで固定
+  成功基準：APPROVED_RANGEを一度も超えない
+
+実験E2：restriction map + 別モデルProbe（Week 1〜2）
+  目的：Probe独立性強化・同調バイアス低減
+  実装：restriction_map_rc_to_probe()
+  ProbeをllaMa3.1:8bで動かす
+  成功基準：Probe-RC一致率 < 70%
+
+実験E3：Persistent Homology攻撃分類（Week 1〜2）
+  目的：既知/未知攻撃の自動判別
+  実装：classify_attack()（ripser + persim使用）
+  FM-01〜FM-12をflow_weight時系列として記録
+  成功基準：既知FM分類精度90%以上
+
+実験E4：SO(4)テッセラクット可視化 Phase A（Week 1〜2）
+  目的：16RCの状態を人間が確認できる形で表示
+  実装：visualize_tesseract_slice()（matplotlib 3D）
+  成功基準：WARNINGが視覚的に識別できる
+
+詳細設計：phase4_oka_experiments.md を参照
+```
