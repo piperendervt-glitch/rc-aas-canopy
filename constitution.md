@@ -215,6 +215,20 @@ w_new = w_old + α × reward + ε
   → σ（案3C）の理論的根拠として引用可能
   → ガウシアンノイズが先鋭解からの脱出に有効
 
+  OWASP Top 10 for Agentic Applications 2026（A判定・2026年3月16日昇格）
+  genai.owasp.org — 100名超の専門家によるピアレビュー済み国際標準フレームワーク
+  AIエージェントの10大セキュリティリスク（ASI01〜ASI10）を定義
+  TRUSSのFMEA（FM-01〜FM-12）との対応：
+    ASI01（Goal Hijack）→ FM-06（RC偽装）・FM-05（権限逸脱）
+    ASI02（Tool misuse）→ FM-03（ループ）・第1条（通信制限）
+    ASI03（Memory poisoning）→ Scribeの独立性・第9条
+    ASI04（Identity継承）→ FM-06・M1実験（相互チェック）
+    ASI05（Supply chain）→ 第15条（インターネット接続禁止）
+  引用フレーム：
+    「TRUSSのFMEA（FM-01〜FM-12）はOWASP ASI01〜10の
+     大部分を独立して発見・対処済みであり、
+     TRUSSの設計が業界標準の脅威モデルと整合することを示す」
+
 ### キメラ状態への対処
 
 キメラ状態とは：
@@ -1743,6 +1757,7 @@ Phase 4以降で数学的概念（G₂ホロノミー・リアプノフ関数等
 | v1.7.4 | 2026-03-16 | Adversarial AAS：Stackelbergゲーム定式化・Phase 5フレームワーク・論文Contribution候補 | pipe_render |
 | v1.7.5 | 2026-03-16 | 問い12：クシクラゲ型アーキテクチャ・Probe新設・テッセラクット設計への統合 | pipe_render |
 | v1.7.6 | 2026-03-16 | 問い13：制御可能なRSI・Pull Request型承認・人間とAIの共存設計 | pipe_render |
+| v1.7.7 | 2026-03-16 | OWASP Top 10 for Agentic Applications 2026をA判定に昇格・FM対応表を追記 | pipe_render |
 
 ---
 
